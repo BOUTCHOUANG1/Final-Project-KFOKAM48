@@ -1,0 +1,344 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* style du css grid */
+body{
+    height: 100vh;
+    background-color: #c3c5ca;
+    display: grid;
+    grid-template-columns:400px 1fr ;
+    grid-template-rows: 90px 1fr 90px;
+    grid-template-areas: 
+     "nav  header "
+     "nav section "
+     "nav footer ";
+  
+     padding: 10px;
+     gap: 15px;
+    
+}
+
+/* style du main */
+
+header{
+    background-color:#92D5CB ;
+    grid-area: header;
+     border-radius: 10px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     color: #fff;
+    
+}
+.header-content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  
+}
+.header-content h1{
+  font-weight: 800;
+}
+.header-content .trait{
+  width: 4px;
+  height: 25px;
+ background-color: black;
+ margin: 10px;
+}
+.header-content p{
+  font-weight: 700;
+ 
+}
+.header-address{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+   
+}
+header .photo img{
+  background-color: black;
+  font-size: 10px;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  border-radius: 50%;
+
+  
+}
+
+/* style du main */
+
+nav{
+    /* background-color:#e3f2fd ; */
+    background-color: #fff;
+    grid-area: nav;
+    border-radius: 10px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+    margin:auto;
+    border: 1px solid black;
+    height: 100%;
+  
+}
+
+/* style de la section */
+
+ #section{
+    background-color: #fff;
+    grid-area: section;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns:  500px 1fr  ;
+    grid-template-rows:  100px 1fr ;
+    grid-template-areas: 
+    "name address"
+    "name address"
+    "name address";
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+
+ }
+ 
+
+ .name{
+    background-color: #9999F0;
+    grid-area: name;
+    border-radius: 10px;
+    margin-bottom: 19%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #93CECF;
+ }
+ .name img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -100px;
+
+ }
+ .name p{
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  box-shadow: 5px 10px 5px rgba(0, 1, 0, 0.1);
+ }
+/* style de la partie contenant l'addresse */
+
+
+ 
+ .address{
+    /* background-color: #7F99DF; */
+    background-color: #9999F0;
+    grid-area: address;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #93CECF;
+    
+ }
+ .address .address-content{
+   background-color: #fff;
+   width: 70%;
+   height: 300px;
+   margin: auto;
+   border-radius: 10px;
+
+
+ }
+ .div{
+  margin: 10px;
+  
+  height: 50px;
+ 
+  padding: 15px;
+  
+ }
+ 
+ hr{
+  border: 1px solid rebeccapurple;
+ }
+
+ 
+
+ /* style du logo */
+ 
+ .logo .menu-icon{
+    color: #333;
+    padding: 10px;
+    font-size: 50px;
+    cursor: pointer;
+    width: 70px;
+   
+  }
+
+  .login_logo{
+    color: #333;
+    width: 50%;
+   font-weight: 500;
+ 
+ }
+ /* style of sidebar */
+
+ nav .sidebar{
+   /* position: fixed; */
+   top: 0;
+   left: 0;
+   width: 260px;
+
+   height: 100%;
+
+ }
+ .sidebar .sidebar-content{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 15px 20px;
+   height: 100%;
+  
+
+ }
+ .sidebar-content .lists{
+ 
+   width: 100%;
+   height: 747px;
+   margin-left: 30%;
+    transition: 0.5s; 
+ }
+
+ .sidebar-content .list{
+   
+    list-style: none;
+  }
+
+  .list{
+   display: flex;
+   align-items: center; 
+   text-decoration: none;
+   margin: 20px 0px;
+   white-space: nowrap;
+   padding: 12px 10px;
+   border-radius: 8px;
+   border: 2px solid #e3f2fd;
+    transition: margin-top 0.5s ease-in-out .5s;  
+   box-shadow: 0 1px 2px 0px rebeccapurple;
+   cursor: pointer;
+    transform: translate(0, 0); 
+   
+  }
+  /*  */
+  @keyframes anime{
+    0%{
+      transform: translate(0, 0);
+    }
+    25%{
+      transform: translate(10px, 0);
+    }
+    50%{
+      transform: translate(10px, 10px);
+    }
+    75%{
+      transform: translate(0px, 10px);
+    }
+    100%{
+      transform: translate(0px, 0px);
+    }
+  }
+  @keyframes colour{
+    0%{
+      background: linear-gradient(141deg, rgba(146,219,200,1) 27%,
+       rgba(153,149,242,1) 56%,
+        rgba(174,108,255,1) 88%);
+    }
+    25%{
+     background: linear-gradient(141deg, rgba(174,108,255,1) 27%,
+       rgba(146,219,200,1) 56%,
+        rgba(153,149,242,1) 88%);
+    }
+    50%{
+      
+      background: linear-gradient(141deg, rgba(153,149,242,1) 27%,
+       rgba(174,108,255,1) 56%, 
+       rgba(146,219,200,1) 88%);
+    }
+    75%{
+      background: linear-gradient(141deg, rgba(174,108,255,1) 27%,
+      rgba(146,219,200,1) 56%,
+       rgba(153,149,242,1) 88%);
+    }
+    100%{
+      background: linear-gradient(141deg, rgba(146,219,200,1) 27%,
+      rgba(153,149,242,1) 56%,
+       rgba(174,108,255,1) 88%);
+    }
+  }
+
+
+  .list:hover{
+    
+    background: linear-gradient(141deg, rgba(146,219,200,1) 27%, rgba(153,149,242,1) 56%, rgba(174,108,255,1) 88%);
+ 
+   /*  transform: translate(20px, 10px); */
+    transition: transform 0.5s ease-in-out .5s; 
+    animation: anime ease-in-out, colour ease-in-out infinite;
+    animation-duration: .5s, 2s;
+    /* animation: colour .5s ease-in-out; */
+    font-weight: 500;
+  }
+     
+  
+
+  .lists .list:hover{
+
+    /* background: rgb(201,237,237);
+background: linear-gradient(90deg, rgba(201,237,237,1) 8%, rgba(255,216,108,1) 86%); */
+/* background: rgb(182,219,236);
+background: linear-gradient(90deg, rgba(182,219,236,1) 8%, rgba(255,216,108,1) 86%);
+  */   
+  background: rgb(146,219,200);
+background: linear-gradient(141deg, rgba(146,219,200,1) 27%, rgba(153,149,242,1) 56%, rgba(174,108,255,1) 88%);
+ 
+  }
+  .lists:hover{
+    transition: margin-top 0.5s ease-in-out .5s;  
+  }
+
+  .list a{
+    text-decoration: none;
+   color: black;
+  }
+
+
+  /* style du footer */
+
+ footer{
+    grid-area: footer;
+    background-color: #92D5CB;
+    border-radius: 10px;
+ }
+
+.content-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+.icons i{
+  margin: 10px;
+
+}

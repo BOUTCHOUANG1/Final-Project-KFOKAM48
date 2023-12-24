@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onglet site</title>
+    <link rel="stylesheet" href="../Projets css/onglets.css">
+    <script src="../Projets script/onglets.js"defer></script>
+</head>
+<body>
+    <div class="tab">
+        <button onclick="openOnglet(event,'Home')" 
+        class="tablinks">Home</button>
+
+        <button onclick="openOnglet(event, 'Contact')" 
+        class="tablinks">Contact</button>
+
+        <button onclick="openOnglet(event, 'Reservation')"
+        class="tablinks">Reservation</button>
+
+        <button onclick="openOnglet(event, 'Boutique')"
+        class="tablinks">Boutique</button>
+    </div>
+
+    <div class="tabcontent" id="Home">
+        <h3>Home</h3>
+        <p>Bienvenue sur la page Home</p>
+        <div class="picture">
+            <img src="../images/img1.jpg" alt="">
+        </div>
+    </div>
+    <div class="tabcontent" id="Contact">
+        <h3>Contact</h3>
+        <p>Bienvenue sur la page Contact</p>
+        <div class="picture">
+            <img src="../images/img2.jpg" alt="">
+        </div>
+    </div>
+    <div class="tabcontent" id="Reservation">
+        <h3>Reservation</h3>
+        <p>Bienvenue sur la page Reservation</p>
+        <div class="picture">
+            <img src="../images/img3.jpg" alt="">
+        </div>
+    </div> 
+    <div class="tabcontent" id="Boutique">
+        <h3>Boutique</h3>
+        <p>Bienvenue sur la page Boutique</p>
+        <div class="picture">
+            <img src="../images/img4.jpg" alt="">
+        </div>
+    </div> 
+    
+</body>
+</html>

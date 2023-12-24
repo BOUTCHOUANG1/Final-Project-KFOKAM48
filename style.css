@@ -1,0 +1,932 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; 
+}
+
+/* --------------------------------------BODY STYLE----------------------------------------------------------------- */
+body{
+  display: flex;
+  align-items: center;
+  height: 98vh;
+  background: linear-gradient(0deg, rgba(228, 194, 171, 0.788) 0%, rgba(233, 214, 137, 0.582) 100%);      
+  width: 98vw;
+}
+ 
+/*------------------------------------------------------ MAIN STYLE-----------------------------------------------------*/
+main {
+  display: flex;
+}
+
+/* - -----------------------------------NAV STYLE -------------------------------------------------------------- */
+main aside nav  {
+  background: transparent;
+  height: 95vh;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 1);
+  border: 1px solid black;
+  width: 17vw;
+  margin: 1rem 0rem 0rem 1rem;
+  animation: animation 1s ease-out;
+}
+
+/* ------------------------------------- NAV'S LOGO STYLE ----------------------------------------------------  */
+nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0rem 1rem 0rem ;
+}
+
+nav .logo img {
+  border: 1px solid black;
+  border-radius: 1rem;
+  cursor: pointer;
+  width: 60%;
+  padding-top: 0.3rem;
+  display: flex;
+  justify-content: center;
+}  
+
+nav .logo img:hover {
+  background-image: linear-gradient(135deg, #E7A977 10%, #EBBE9B 100%);
+}
+
+nav .logo a {
+  display: flex;
+  justify-content: center;
+}
+
+/* --------------------------------------SIDEBAR CONTENT STYLE-------------------------------------------------------- */
+nav .sidebar-content {
+  justify-content: center;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  animation: animation 5s ease-out;
+}
+
+/* -------------------------------------- LINKS STYLE -----------------------------------------------------------------  */
+nav .sidebar-content a {
+  background-color: inherit;
+  cursor: pointer;
+  color: black;
+  white-space: nowrap;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: fit-content;
+  border: 1px solid black;
+  border-radius: 0.5em;
+  box-shadow: 0px 0px 1px 1px black;
+  transition: 0.9s; 
+}
+
+nav .sidebar-content a:hover{
+  background-image: linear-gradient(135deg, #E7A977 10%, #EBBE9B 100%);
+}
+
+nav .sidebar-content a:active{
+  background-color: rgba(156, 68, 9, 0.856);
+}
+
+/*-------------animation for nav links-----------------------*/
+@keyframes animation{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+/* ------------------------------LINK'S BOXICONS STYLE ------------------------------------------------------------- */
+a .bx{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #181717;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-left: 0.3rem; 
+}
+
+/* ------------------------------LINK'S NAME STYLE ------------------------------------------------------------- */
+a .link-name {
+  text-wrap:wrap ;
+  margin-left: 0.5%;
+  text-transform: capitalize;
+  font-weight: 500; 
+  font-size: 1vh;
+}
+
+/* ------------------------ -------------------------ARTICLE STYLE ------------------------------------------------- */
+article {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 95vh;
+  margin: 1rem 1rem 0rem 1rem;
+}
+
+/* ------------------------ -------------------------HEADER STYLE ------------------------------------------------- */
+header {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 1);
+  width: 100%;
+  height: 13%;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 1rem;    
+}
+
+/* ------------------------ -------------------------HEADER CONTENT'S STYLE ------------------------------------------------- */
+header .header-content{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.burger {
+  display: none;
+}
+
+.burger-menu{
+  display: none;
+}
+
+/* ------------------------ -------------------------HEADER LEFT BLOCK STYLE ------------------------------------------------- */
+header .header-content .top-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+
+/* ------------------------ -------------------------HEADER-IMAGE STYLE ------------------------------------------------- */
+header .header-content img{
+  cursor: pointer;
+  outline: none;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%; 
+}
+
+/* ------------------------ -------------------------HEADER RIGHT BLOCK STYLE ------------------------------------------------- */
+.top-bar2 {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  align-items: center;
+  gap: 5%;
+}
+
+/* -------------------------------------------------------SECTION -----------------------------------------------------------*/
+section{
+  display: flex;
+  flex-direction: row;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 1);
+  border: 1px solid black;
+  width: 100%;
+  height: 70%;
+  background: transparent;
+
+} 
+
+/* ------------------------ -------------------------SECTION-LEFT BLOCK STYLE ------------------------------------------------- */
+section .name-box {
+  display: flex;
+  justify-content: center;
+  width: 35%;
+  padding-top: 1rem;
+}
+
+section .name {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: 80%;
+  gap: 10%;
+  border-radius: 1rem;
+}
+
+section .name:hover {
+  background-image: linear-gradient(135deg, #E7A977 10%, #EBBE9B 100%);
+}
+
+section .name p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 3.5vh;
+} 
+
+/* ------------------------ -------------------------SECTION-IMAGE STYLE ------------------------------------------------- */
+section .name img {
+  cursor: pointer;
+  margin-top: 2%;
+  width: 17rem;
+  height: 17rem;
+  border-radius: 50%;
+}
+
+/* ------------------------ -------------------------SECTION-RIGHT BLOCK STYLE ------------------------------------------------- */
+section .address-box {
+  padding-top: 1rem;
+  width: 65%;
+  display: flex;
+  justify-content: center; 
+}
+
+section .address-content {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 1rem;
+  width: 85%;
+  gap: 5%;
+  height: 80%; 
+}
+
+section .address-content span {
+  flex: 1;
+  display: inline-block;
+}
+
+.address-content hr {
+  border: 1px solid rgb(32, 32, 30);
+}
+
+section .address-content .contact {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0rem 0rem 1rem ;
+}
+
+section .address-content .contact p {
+  font-weight: 500;
+  width: 70%;
+  font-size: 2vh;
+  text-wrap: wrap;
+}
+
+/* ------------------------ -------------------------FOOTER STYLE ------------------------------------------------- */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 1);
+  border: 1px solid black;  
+  height: 13%;
+  background: transparent;
+}
+
+/* ------------------------ -------------------------FOOTER ICONS STYLE ------------------------------------------------- */
+.content-footer .icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1rem;
+}
+
+.icons .bx { 
+  color: black;
+}
+
+.content-footer p {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 1rem; 
+  color: black;
+  font-weight: 500;
+  font-size: 2vh;
+
+}
+
+.content-footer hr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(12, 12, 12);
+  width: 70vw; 
+}
+
+/* ------------------------ -------------------------IFRAME STYLE ------------------------------------------------- */
+iframe {
+  width: 99%;
+  height: 99%;
+  margin: 0.5%;
+  border-radius: 1rem;
+  border: #181717;
+}
+
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+ 
+  aside {
+    display: none;
+  }
+
+  body {
+    background: linear-gradient(0deg, rgba(183,121,80,1) 0%, rgba(233,214,137,1) 50%,);
+    justify-content: center;
+  }
+
+  .burger::before {
+    content: "\2634";
+    border: 1px solid black;
+    font-size: 2rem;
+  }
+
+  .burger {
+    display: contents;
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    height: 100%;
+    align-items: center;
+  }
+
+  .burger-menu {
+    display: none;
+    flex-direction: column;
+    align-items:center;
+    background: linear-gradient(180deg, rgb(230, 179, 146) 0%, rgb(182, 169, 118) 100%);
+    border: 2px solid black;
+    border-radius: 1rem;
+    width: 55%;
+    height: 60%; 
+    position: fixed;
+    transform: translate(0%, 23%);
+    animation: animation 1s ease-out;
+  }
+
+  .burger-menu a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    background-color: inherit;
+    letter-spacing: 1px;
+    border: none;
+    outline: 0;
+    color: black;
+    cursor: pointer;
+    transition: 0.9s;
+  }
+
+  .burger-menu ol a:hover {
+    background: rgba(156, 68, 9, 0.562);
+  }
+
+  .burger-menu ol a:active{
+    background-color: rgba(156, 68, 9, 0.856);
+  }
+
+  /*-------------animation pour burger-----------------------*/
+  @keyframes animation{
+    from{opacity: 0;}
+    to{opacity: 1;}
+  }
+
+  .burger-menu .logo {
+    border: 1px solid rgb(7, 10, 8);
+    border-radius: 0.5rem;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+  }
+
+  .burger-menu .logo:hover {
+    background: rgba(156, 68, 9, 0.562);
+  }
+
+  .burger-menu .logo img {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .burger-menu .logo a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .burger-menu ol {
+    margin-top: 10%;
+    line-height: 1.5rem;
+  }
+
+  .burger-menu .link-name {
+    font-size: 2vh;
+    color: #181717;
+  }  
+
+  /* ------------------------ -------------------------HEADER LEFT BLOCK STYLE ------------------------------------------------- */
+  header .header-content .top-bar {  
+    width: 50%;
+  }
+
+  /* ------------------------ -------------------------HEADER TRAIT OF SEPERATION STYLE ------------------------------------------------- */
+  .top-bar h1 {
+    font-weight: 500;
+    font-size: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  /* ------------------------ -------------------------HEADER-IMAGE STYLE ------------------------------------------------- */
+  header .header-content img{
+    width: 4rem;
+    height: 4rem;
+  }
+
+  /* ------------------------ -------------------------HEADER RIGHT BLOCK STYLE ------------------------------------------------- */
+  .top-bar2 {
+    width: 30%;
+  }
+
+  .top-bar2 h2 {
+   display: none;
+  }
+
+  /* -------------------------------------------------------SECTION -----------------------------------------------------------*/
+  section {
+    flex-direction: column;
+  } 
+
+  /* ------------------------ -------------------------SECTION-LEFT BLOCK STYLE ------------------------------------------------- */
+   section .name-box {
+    width: 100%;
+    height: 35%;
+  } 
+
+   section .name {
+    height: 95%;
+  } 
+
+  section .name p {
+   display: none;
+  }
+
+  /* ------------------------ -------------------------SECTION-IMAGE STYLE ------------------------------------------------- */
+   section .name img {
+    width: 7rem;
+    height: 7rem;
+  } 
+
+  /* ------------------------ -------------------------SECTION-RIGHT BLOCK STYLE ------------------------------------------------- */
+  section .address-box { 
+    padding-top: 0;
+    width: 100%;
+    height: 65%; 
+    padding-bottom: 0.5rem;
+  } 
+
+  section .address-content {
+    gap: 4%;
+    width: 95%;
+    height: 100%; 
+  } 
+  
+  /* ------------------------ -------------------------FOOTER-CONTENT STYLE ------------------------------------------------- */
+  .content-footer .icons {
+    width: 60%;
+  }
+
+  .content-footer p {
+    font-size: 1.7vh;
+  } 
+}
+
+
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  aside {
+    display: none;
+  }
+
+  body {
+    background: linear-gradient(0deg, rgba(183,121,80,1) 0%, rgba(233,214,137,1) 50%,);
+    justify-content: center;
+  }
+
+  .burger::before {
+    content: "\2634";
+    border: 1px solid black;
+    font-size: 2rem;
+  }
+
+  .burger {
+    display: contents;
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    height: 100%;
+    align-items: center;
+  }
+
+  .burger-menu {
+    display: none;
+    flex-direction: column;
+    align-items:center;
+    background: linear-gradient(180deg, rgb(230, 179, 146) 0%, rgb(182, 169, 118) 100%);
+    border: 2px solid black;
+    border-radius: 1rem;
+    width: 50%;
+    height: 62%; 
+    position: fixed;
+    transform: translate(0%, 22%);
+    animation: animation 1s ease-out;
+  }
+
+  .burger-menu a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    background-color: inherit;
+    letter-spacing: 1px;
+    border: none;
+    outline: 0;
+    color: black;
+    cursor: pointer;
+    transition: 0.9s;
+  }
+
+  .burger-menu ol a:hover {
+    background: rgba(156, 68, 9, 0.562);
+  }
+
+  .burger-menu ol a:active{
+    background-color: rgba(156, 68, 9, 0.856);
+  }
+
+  /*-------------animation pour burger-----------------------*/
+  @keyframes animation{
+    from{opacity: 0;}
+    to{opacity: 1;}
+  }
+
+  .burger-menu .logo {
+    border: 1px solid rgb(7, 10, 8);
+    border-radius: 0.5rem;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+  }
+
+  .burger-menu .logo:hover {
+    background: rgba(156, 68, 9, 0.562);
+  }
+
+  .burger-menu .logo img {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .burger-menu .logo a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .burger-menu ol {
+    margin-top: 10%;
+    line-height: 2.5rem;
+  }
+
+  .burger-menu .link-name {
+    font-size: 2vh;
+    color: #181717;
+  }  
+
+  /* ------------------------ -------------------------HEADER LEFT BLOCK STYLE ------------------------------------------------- */
+  header .header-content .top-bar { 
+    width: 50%;  
+  } 
+
+  /* ------------------------ -------------------------HEADER-IMAGE STYLE ------------------------------------------------- */
+  header .header-content img { 
+    width: 6rem; 
+    height: 6rem; 
+  } 
+
+  .top-bar2 h2 {
+    display: none;
+  }
+
+  /* -------------------------------------------------------SECTION -----------------------------------------------------------*/
+  section {
+    flex-direction: column;
+  } 
+
+  /* ------------------------ -------------------------SECTION-LEFT BLOCK STYLE ------------------------------------------------- */
+  section .name-box {
+    width: 100%;
+    height: 45%;
+  } 
+
+   section .name {
+    height: 100%;
+  } 
+
+  section .name p {
+   font-size: 2.5vh;
+  }
+
+  /* ------------------------ -------------------------SECTION-IMAGE STYLE ------------------------------------------------- */
+   section .name img {
+    width: 12rem;
+    height: 12rem;
+  } 
+
+  /* ------------------------ -------------------------SECTION-RIGHT BLOCK STYLE ------------------------------------------------- */
+  section .address-box { 
+    width: 100%;
+    height: 55%; 
+    padding-bottom: 1rem;
+  } 
+
+  section .address-content {
+    width: 95%;
+    height: 100%; 
+  } 
+
+  /* ------------------------ -------------------------FOOTER-CONTENT STYLE ------------------------------------------------- */
+  .content-footer p {
+    font-size: 1.5vh;
+  } 
+}
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  body {
+    justify-content: center;
+  }
+  
+  .burger {
+    display: none;
+  }
+
+  /* ----------- -----------------------ASIDE STYLE -------------------------------------------------------------- */
+   main aside{
+    display: contents;
+  } 
+
+  /* - -----------------------------------NAV STYLE -------------------------------------------------------------- */
+  main aside nav  { 
+    width: 25vw;
+  } 
+  
+  nav .sidebar-content a {
+    gap: 2%;
+  }
+
+  a .link-name {
+    font-size: 1.4vh;
+  }
+
+  /* ------------------------ -------------------------ARTICLE STYLE ------------------------------------------------- */
+  article {
+    width: 68vw;
+  } 
+  
+  /* ------------------------ -------------------------HEADER LEFT BLOCK STYLE ------------------------------------------------- */
+  header .header-content .top-bar { 
+    width: 50%;
+  } 
+  
+  /* ------------------------ -------------------------HEADER RIGHT BLOCK STYLE ------------------------------------------------- */
+  .top-bar2 { 
+    width: 47%;
+   } 
+
+  .top-bar2 h2 {
+    display: none;
+  } 
+  
+  /* ------------------------ -------------------------SECTION-IMAGE STYLE ------------------------------------------------- */
+   section .name img {
+    width: 11rem;
+    height: 11rem;
+  }
+  
+  /* ------------------------ -------------------------FOOTER STYLE ------------------------------------------------- */
+  .content-footer .icons {
+    font-size: 3vh;
+    width: 60%;
+  }
+
+  .content-footer p {
+    font-size: 2.2vh;
+  }
+  
+  .content-footer hr {
+    width: 62vw; 
+  }
+} 
+  
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  body {
+    justify-content: center;
+  }
+  
+  .burger {
+    display: none;
+  }
+
+  /* ----------- -----------------------ASIDE STYLE -------------------------------------------------------------- */
+   main aside{
+    display: contents;
+  } 
+
+  /* - -----------------------------------NAV STYLE -------------------------------------------------------------- */
+  main aside nav  { 
+    width: 25vw;
+  } 
+  
+  nav .sidebar-content a {
+    gap: 5%;
+  }
+
+  a .link-name {
+    font-size: 1.5vh;
+  }
+
+  /* ------------------------ -------------------------ARTICLE STYLE ------------------------------------------------- */
+  article {
+    width: 68vw;
+  } 
+  
+  /* ------------------------ -------------------------HEADER LEFT BLOCK STYLE ------------------------------------------------- */
+  header .header-content .top-bar { 
+    width: 40%;
+  } 
+  
+  /* ------------------------ -------------------------HEADER RIGHT BLOCK STYLE ------------------------------------------------- */
+  .top-bar2 { 
+    width: 47%;
+   } 
+
+  .top-bar2 h2 {
+    display: contents;
+  } 
+  
+  /* ------------------------ -------------------------SECTION-IMAGE STYLE ------------------------------------------------- */
+   section .name img {
+    width: 11rem;
+    height: 11rem;
+  }
+  
+  /* ------------------------ -------------------------FOOTER STYLE ------------------------------------------------- */
+  .content-footer .icons {
+    font-size: 3vh;
+    width: 60%;
+  }
+
+  .content-footer p {
+    font-size: 2.2vh;
+  }
+  
+  .content-footer hr {
+    width: 62vw; 
+  }
+}
+
+
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  body {
+    justify-content: center;
+  }
+  
+  .burger {
+    display: none;
+  }
+
+  /* ----------- -----------------------ASIDE STYLE -------------------------------------------------------------- */
+   main aside{
+    display: contents;
+  } 
+
+  /* - -----------------------------------NAV STYLE -------------------------------------------------------------- */
+  main aside nav  { 
+    width: 20vw;
+  } 
+  
+  nav .sidebar-content a {
+    gap: 5%;
+  }
+
+  a .link-name {
+    font-size: 1.5vh;
+  }
+
+  /* ------------------------ -------------------------ARTICLE STYLE ------------------------------------------------- */
+  article {
+    width: 74vw;
+  } 
+  
+  /* ------------------------ -------------------------HEADER LEFT BLOCK STYLE ------------------------------------------------- */
+  header .header-content .top-bar { 
+    width: 40%;
+  } 
+  
+  /* ------------------------ -------------------------HEADER RIGHT BLOCK STYLE ------------------------------------------------- */
+  .top-bar2 { 
+    width: 47%;
+   } 
+
+  .top-bar2 h2 {
+    display: contents;
+  } 
+  
+  section {
+    flex-direction: row;
+  }
+
+  /* ------------------------ -------------------------SECTION-IMAGE STYLE ------------------------------------------------- */
+   section .name img {
+    width: 15rem;
+    height: 15rem;
+  }
+  
+  section .name-box {
+    height: 90%;
+    width: 40%;
+  }
+
+  section .name{
+    height: 100%;
+  }
+
+  section .address-box {
+    height: 90%;
+    width: 60%;
+    padding-bottom: 0;
+  }
+
+  section .address-content {
+    height: 100%;
+  }
+
+  /* ------------------------ -------------------------FOOTER STYLE ------------------------------------------------- */
+  .content-footer .icons {
+    font-size: 3vh;
+    width: 60%;
+  }
+
+  .content-footer p {
+    font-size: 2.2vh;
+  }
+  
+  .content-footer hr {
+    width: 62vw; 
+  }
+}

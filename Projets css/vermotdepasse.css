@@ -1,0 +1,100 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+   background-color: #675afe; 
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  min-height: 100vh;
+
+}
+/* stylisé le conteneur pour les entrées */
+.container{
+    background-color: #fff;
+    width:350px ;
+    padding:20px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+input{
+    padding: 12px;
+    border: 1px solid #ccc;
+    outline: 0;
+    border-radius: 4px;
+    margin-bottom: 6px;
+}
+form i{
+    position: absolute;
+    top: 30px;
+    font-size: 28px;
+}
+/* personnalisation du boutton d'envoi */
+input[type= "submit"]{
+    background-color: #675afe;
+    color: #ccc;
+    border: 1px solid #675afe;
+}
+/* personnalisé le message */
+#message{
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 6px;
+    width: 350px;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+    animation: anime 0.5s ease-in-out;
+}
+/* animation */
+@keyframes anime{
+    from{
+        transform: translateY(100px);
+    }
+}
+h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+#message p{
+    margin-left: 7px;
+    padding: 7px 0;
+    font-size: 15px;
+    content:✕ ;
+
+}
+/* lorsque les exigeces sont erronées */
+.invalid{
+    color: red;
+}
+.invalid:before{
+    position: relative;
+    left: -7px;
+    content:"✕" ;
+
+}
+.valid{
+    color: green;
+}
+.valid:before{
+    position: relative;
+    left: -7px;
+    content:"✓" ;
+
+}
+
